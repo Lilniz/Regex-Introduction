@@ -34,9 +34,9 @@ To better navigate to what you wish to know, just click on the specific link bel
 * The `+` will math the pattern at least 1 or more times.
 * The `?` will match the pattern 0 to 1 time.
 * The `{}` wrappers are unique in that they offer 3 separate ways to set your limits. Example: `{2,6}`
-** The first `{}` option is `{n}`: this matches the pattern the exact amount of times expressed.
-** The second `{}` option is `{n,}`: this matches the pattern at least the amount of times expressed.
-** The third `{}` option is `{n, x}`: this matches the patter from a minimum (n) to a maximum (x) of times expressed.
+    * The first `{}` option is `{n}`: this matches the pattern the exact amount of times expressed.
+    * The second `{}` option is `{n,}`: this matches the pattern at least the amount of times expressed.
+    * The third `{}` option is `{n, x}`: this matches the patter from a minimum (n) to a maximum (x) of times expressed.
 * A tip using any quantifier is utilizing the ? afterwards, will ensure the matches are returned as few as possible.
 
 ### Grouping Constructs
@@ -53,15 +53,15 @@ To better navigate to what you wish to know, just click on the specific link bel
 ### Bracket Expressions
 * The bracket expressions are ways to represent a range of characters you need to matchm and outline the characters you want to include.
 * They can be used simply with `[]`, and as an example we might make one look like `[coding]`.
-** This will try to find any matches relating to the characters present above, regardless of position, and is a bit broad.
+    * This will try to find any matches relating to the characters present above, regardless of position, and is a bit broad.
 * If you want to find a range between character/letters `[b-e]` will find strings which include these letters (still, a lot).
 * Other ways to utilize bracket expressions are via numbers, `[1-4]`, or special characters, `[-_]`.
-** Hint: Brackets are case sensitive for the letter characters.
+    * Hint: Brackets are case sensitive for the letter characters.
 * You can place many search parameters together within these brackets, as seen in our Regex: `[a-z0-9_\.-]`
-** This will find any lowercase letter, any number, and the 4 special characters, as a string within our file!
+    * This will find any lowercase letter, any number, and the 4 special characters, as a string within our file!
 
 ### Character Classes
-
+* 
 
 ### The OR Operator
 
