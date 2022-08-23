@@ -31,7 +31,7 @@ To better navigate to what you wish to know, just click on the specific link bel
 ### Quantifiers
 * The quantifiers are how you set terms for your matching/searching. There are many to remember!
 * The `*` character will match the pattern 0 or more times.
-* The `+` will math the pattern at least 1 or more times.
+* The `+` will match the pattern at least 1 or more times.
 * The `?` will match the pattern 0 to 1 time.
 * The `{}` wrappers are unique in that they offer 3 separate ways to set your limits. Example: `{2,6}`
     * The first `{}` option is `{n}`: this matches the pattern the exact amount of times expressed.
@@ -43,6 +43,7 @@ To better navigate to what you wish to know, just click on the specific link bel
 * The grouping constructs allows for you to further complicate searches. As you see, we have `{}`, `[]`, and even `()`, but only one is a construct!
 * `()` are how we group things together! You can have multiple of these, and even within each other. These are called subexpressions.
 * `([a-z0-9_\.-]+)` is an example showing that we want to ensure one part of our search look for multiple parameters.
+    * And the `+` will ensure we match this pattern at least 1 time, or more!
 * If you didn't guess how the above example is read, we'll explain it below.
 * Our `[a-z ]` is looking for any letter of a to z.
 * Our `[ 0-9 ]` is looking for any number of 0 to 9.
@@ -95,3 +96,6 @@ To better navigate to what you wish to know, just click on the specific link bel
 ## Author
 
 A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Lee Boettcher is an aspiring Full Stack Web Developer with a years worth of study (via bootcamp) already under his belt. Although the quick paced learning expanded his knowledge quickly, he understands that mastery comes with years of application and study!
+
+GitHub [Profile](#https://github.com/Lilniz)
