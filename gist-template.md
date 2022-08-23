@@ -21,10 +21,15 @@ To better navigate to what you wish to know, just click on the specific link bel
 ## Regex Components
 
 ### Anchors
-
+* The anchor component of a Regular Expression are the characters which start and end the string. 
+* As we begin the Regex (a literal) it must be encased in `/ /` to denote the expression. 
+* Afterwards is when the Anchors come into play. The ^ character, and $ character are our wrapping anchors.
+* Anything that comes after our ^ will be recognized as the literal, and you will close that string with the $ character.
+* Exaggerated look to see where these characters sit: `/  ^   ([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})   $  /`
+* Failure to do so may result in your whole file laced with red errors!
 
 ### Quantifiers
-
+* 
 
 ### Grouping Constructs
 
