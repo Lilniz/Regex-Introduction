@@ -40,7 +40,7 @@ To better navigate to what you wish to know, just click on the specific link bel
 * A tip using any quantifier is utilizing the ? afterwards, will ensure the matches are returned as few as possible.
 
 ### Grouping Constructs
-* The grouping constructs allows for you to further complicate searches. As you see, we have `{}`, `[]`, and even `()`.
+* The grouping constructs allows for you to further complicate searches. As you see, we have `{}`, `[]`, and even `()`, but only one is a construct!
 * `()` are how we group things together! You can have multiple of these, and even within each other. These are called subexpressions.
 * `([a-z0-9_\.-]+)` is an example showing that we want to ensure one part of our search look for multiple parameters.
 * If you didn't guess how the above example is read, we'll explain it below.
@@ -51,7 +51,14 @@ To better navigate to what you wish to know, just click on the specific link bel
 * To ensure subexpressions follow one after the other in a specific order, just add `:` to the middle. Like this: `(0-9):(a-z)`
 
 ### Bracket Expressions
-
+* The bracket expressions are ways to represent a range of characters you need to matchm and outline the characters you want to include.
+* They can be used simply with `[]`, and as an example we might make one look like `[coding]`.
+** This will try to find any matches relating to the characters present above, regardless of position, and is a bit broad.
+* If you want to find a range between character/letters `[b-e]` will find strings which include these letters (still, a lot).
+* Other ways to utilize bracket expressions are via numbers, `[1-4]`, or special characters, `[-_]`.
+** Hint: Brackets are case sensitive for the letter characters.
+* You can place many search parameters together within these brackets, as seen in our Regex: `[a-z0-9_\.-]`
+** This will find any lowercase letter, any number, and the 4 special characters, as a string within our file!
 
 ### Character Classes
 
