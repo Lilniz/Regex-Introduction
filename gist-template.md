@@ -23,16 +23,32 @@ To better navigate to what you wish to know, just click on the specific link bel
 ### Anchors
 * The anchor component of a Regular Expression are the characters which start and end the string. 
 * As we begin the Regex (a literal) it must be encased in `/ /` to denote the expression. 
-* Afterwards is when the Anchors come into play. The ^ character, and $ character are our wrapping anchors.
-* Anything that comes after our ^ will be recognized as the literal, and you will close that string with the $ character.
+* Afterwards is when the Anchors come into play. The `^` character, and `$` character are our wrapping anchors.
+* Anything that comes after our `^` will be recognized as the literal, and you will close that string with the` $` character.
 * Exaggerated look to see where these characters sit: `/  ^   ([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})   $  /`
 * Failure to do so may result in your whole file laced with red errors!
 
 ### Quantifiers
-* 
+* The quantifiers are how you set terms for your matching/searching. There are many to remember!
+* The `*` character will match the pattern 0 or more times.
+* The `+` will math the pattern at least 1 or more times.
+* The `?` will match the pattern 0 to 1 time.
+* The `{}` wrappers are unique in that they offer 3 separate ways to set your limits. Example: `{2,6}`
+** The first `{}` option is `{n}`: this matches the pattern the exact amount of times expressed.
+** The second `{}` option is `{n,}`: this matches the pattern at least the amount of times expressed.
+** The third `{}` option is `{n, x}`: this matches the patter from a minimum (n) to a maximum (x) of times expressed.
+* A tip using any quantifier is utilizing the ? afterwards, will ensure the matches are returned as few as possible.
 
 ### Grouping Constructs
-
+* The grouping constructs allows for you to further complicate searches. As you see, we have `{}`, `[]`, and even `()`.
+* `()` are how we group things together! You can have multiple of these, and even within each other. These are called subexpressions.
+* `([a-z0-9_\.-]+)` is an example showing that we want to ensure one part of our search look for multiple parameters.
+* If you didn't guess how the above example is read, we'll explain it below.
+* Our `[a-z ]` is looking for any letter of a to z.
+* Our `[ 0-9 ]` is looking for any number of 0 to 9.
+* Our `[ _/.-]` is looking for any of these specific characters.
+* A hint, this does matter as they all fall into the same `()`.
+* To ensure subexpressions follow one after the other in a specific order, just add `:` to the middle. Like this: `(0-9):(a-z)`
 
 ### Bracket Expressions
 
