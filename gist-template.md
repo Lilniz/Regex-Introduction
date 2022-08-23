@@ -62,7 +62,7 @@ To better navigate to what you wish to know, just click on the specific link bel
 
 ### Character Classes
 * Character classes are what define a set of characters. The most common being `.`, `\d`, `\w`, and `\s`.
-    * We use forward slashes for these!
+    * We use back slashes for these!
 * The `.` class will match any character except a `\n`.
 * The `\d` class will work just as a bracket expression `[0-9]`.
 * The `\w` class will match and alphanumeric alphabet, including `_`. 
@@ -86,7 +86,11 @@ To better navigate to what you wish to know, just click on the specific link bel
     * `m` is the third flag. It is a multi-line search which multiple line input strings will be treated as such.
 
 ### Character Escapes
-
+* Another quick section, character escapes within a Regex allow a character that would normally be searched literally.
+* The character escape is a `\`, (back slash)!
+    * Example: `({ )` begins a quantifier but you can add the back slash to allow the search to ignore that!
+        * `(\{ )` will allow for the `{` to be searched instead as a special character and not a way to group other parameters!
+* The `\` and other special characters lose their significance within a bracket expression!
 
 ## Author
 
