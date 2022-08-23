@@ -61,10 +61,21 @@ To better navigate to what you wish to know, just click on the specific link bel
     * This will find any lowercase letter, any number, and the 4 special characters, as a string within our file!
 
 ### Character Classes
-* 
+* Character classes are what define a set of characters. The most common being `.`, `\d`, `\w`, and `\s`.
+    * We use forward slashes for these!
+* The `.` class will match any character except a `\n`.
+* The `\d` class will work just as a bracket expression `[0-9]`.
+* The `\w` class will match and alphanumeric alphabet, including `_`. 
+    * It is equivalent to `[A-Za-z0-9_]`.
+* The `\s` will match whitespace characters... spaces, tabs, line breaks.
+* A hint for character classes. If you wish to try and find the inverse, capitalize your letter within the class.
+    * Example: `\D`, `\W`, `\S`.
 
 ### The OR Operator
-
+* This is a quick section! The or operator is just the straight line `|`!
+* `|` will function as a way to allow positions within our grouping constructs (which are specific), to change!
+* `|` in a string of `(123)`, where it will find only results having that exact string, can be varied.
+    * `(1|2|3)` can now return results which any order of those 3 numbers are found together!
 
 ### Flags
 
