@@ -78,7 +78,12 @@ To better navigate to what you wish to know, just click on the specific link bel
     * `(1|2|3)` can now return results which any order of those 3 numbers are found together!
 
 ### Flags
-
+* Flags are a way to add additional search functionality without placing them within our /^ $/ (being and ending slashes).
+* These flags are placed at the end of the Regular Expression after the closing slash!
+* There are 6 optional flags but 3 are the main ones to know.
+    * `g` is the first flag. It is a global search which tests the Regex against all possible matches in a string.
+    * `i` is the second flag. It is a case-INsensitive search which case is ignored while attempting to match a string.
+    * `m` is the third flag. It is a multi-line search which multiple line input strings will be treated as such.
 
 ### Character Escapes
 
